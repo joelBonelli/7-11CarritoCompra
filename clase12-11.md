@@ -50,11 +50,9 @@ class Transaccion:
     
     def ejecutar_pago(self, monto: float) -> bool:
         return self.metodo_pago.procesar_pago(monto)
-
+```
 #### Diagrama de Clases
-
 ```mermaid
-
 classDiagram
     class MetodoPago {
         <<abstract>>
